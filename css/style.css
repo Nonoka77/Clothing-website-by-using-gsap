@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Railway', sans-serif;
+  background-color: black;
+}
+
+body header {
+  height: 100vh;
+  position: relative;
+}
+
+body header nav {
+  background-color: ivory;
+  width: 40%;
+  height: 20%;
+  color: #916356;
+  z-index: 1000;
+}
+
+body header nav .closed-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 20%;
+  width: 40%;
+  position: absolute;
+  padding: 20px 40px;
+}
+
+body header nav .closed-nav h3 {
+  font-size: 1.8rem;
+}
+
+body header nav .closed-nav .nav-link {
+  list-style: none;
+}
+
+body header nav .closed-nav .nav-link .menu {
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+body header nav .open-nav {
+  position: absolute;
+  top: 20%;
+  width: 40%;
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  opacity: 0;
+  pointer-events: none;
+}
+
+body header nav .open-nav .clothing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+body header nav .open-nav .clothing h2 {
+  font-size: 3rem;
+  letter-spacing: 2px;
+}
+
+body header nav .open-nav .clothing ul {
+  list-style: none;
+}
+
+body header nav .open-nav .clothing ul li a {
+  text-decoration: none;
+  color: #916356;
+  margin-bottom: 10px;
+  display: block;
+}
+
+body header nav .open-nav .nav-images {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body header nav .open-nav .nav-images img {
+  height: 250px;
+}
+
+body header .cover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  pointer-events: none;
+}
+
+body header .cover img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  width: 100%;
+}
+
+body header .cover .cover-date {
+  position: absolute;
+  left: 10%;
+  bottom: 10%;
+  opacity: .7;
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */
